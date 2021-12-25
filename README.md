@@ -12,7 +12,7 @@ braille.Build().Save("result.png");
 
 ![image](https://user-images.githubusercontent.com/74132592/147390584-9dcab117-8935-4a76-99f6-c126ef8b2d20.png)
 
-Вот так выглядит буква Г:
+Вот так выглядит буква Г в коде:
 ```
 new alphabetBrailleStruct
 {
