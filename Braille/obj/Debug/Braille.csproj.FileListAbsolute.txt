@@ -1,0 +1,7 @@
+C:\Users\Антон\source\repos\Braille\Braille\bin\Debug\Braille.exe.config
+C:\Users\Антон\source\repos\Braille\Braille\bin\Debug\Braille.exe
+C:\Users\Антон\source\repos\Braille\Braille\bin\Debug\Braille.pdb
+C:\Users\Антон\source\repos\Braille\Braille\obj\Debug\Braille.csproj.AssemblyReference.cache
+C:\Users\Антон\source\repos\Braille\Braille\obj\Debug\Braille.csproj.CoreCompileInputs.cache
+C:\Users\Антон\source\repos\Braille\Braille\obj\Debug\Braille.exe
+C:\Users\Антон\source\repos\Braille\Braille\obj\Debug\Braille.pdb
