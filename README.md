@@ -23,6 +23,16 @@ new alphabetBrailleStruct
   }
 }
 ```
+## Пример
+Закодируем слово 'готово':<br/>
+```
+BrailleBuilder braille = new BrailleBuilder(1000, 1000, 50, true, Brushes.White);
+braille.appendText("готово", Alphabet.RUSSIA);
+braille.Build().Save("result.png");
+```
+Результат:<br/><br/>
+![image](https://user-images.githubusercontent.com/74132592/147390702-17188cac-fa33-4657-8a04-beca0822cd96.png)
+
 
 
 
