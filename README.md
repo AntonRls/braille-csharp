@@ -1,4 +1,4 @@
-# braille-csharp
+# braille C#
 Шрифт Брайля в C#
 
 ## Использование
