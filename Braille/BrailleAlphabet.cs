@@ -457,7 +457,7 @@ namespace Braille
               },
                                    new alphabetBrailleStruct
               {
-                symbol = 'x',
+                symbol = 'x', 
                 cell = new List<int>
                 {
                     1,0,1,1,0,1

@@ -101,7 +101,7 @@ namespace Braille
         /// <returns></returns>
         public Bitmap Build()
         {
-            return picture;
+            return picture; 
         }
         /// <summary>
         /// Очищает картинку

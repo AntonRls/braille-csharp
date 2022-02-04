@@ -17,7 +17,7 @@ namespace Braille
 
             braille.Clear(Color.White);
             braille.appendText("hello", Alphabet.ENGLISH);
-            braille.Build().Save("result2.png");
+            braille.Build().Save("result2.png"); 
         }
 
     }
