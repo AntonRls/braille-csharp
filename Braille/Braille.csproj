@@ -7,7 +7,7 @@
     <ProjectGuid>{C16F7AAB-3760-4958-B142-6A16C7E2469C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Braille</RootNamespace>
-    <AssemblyName>Brailles</AssemblyName>
+    <AssemblyName>Braille</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
