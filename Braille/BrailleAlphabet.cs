@@ -277,8 +277,217 @@ namespace Braille
 
 
         };
-    }
+        public static List<alphabetBrailleStruct> ENGLISH = new List<alphabetBrailleStruct>
+        {
+             new alphabetBrailleStruct
+             {
+                symbol = 'a',
+                cell = new List<int>
+                {
+                    1,0,0,0,0,0
+                }
+             },
+              new alphabetBrailleStruct
+              {
+                symbol = 'b',
+                cell = new List<int>
+                {
+                    1,1,0,0,0,0
+                }
+              },
+               new alphabetBrailleStruct
+              {
+                symbol = 'c',
+                cell = new List<int>
+                {
+                    1,0,0,1,0,0
+                }
+              },
+                new alphabetBrailleStruct
+              {
+                symbol = 'd',
+                cell = new List<int>
+                {
+                    1,0,0,1,1,0
+                }
+              },
+                 new alphabetBrailleStruct
+              {
+                symbol = 'e',
+                cell = new List<int>
+                {
+                    1,0,0,0,1,0
+                }
+              },
+                  new alphabetBrailleStruct
+              {
+                symbol = 'f',
+                cell = new List<int>
+                {
+                    1,1,0,1,0,0
+                }
+              },
+                   new alphabetBrailleStruct
+              {
+                symbol = 'g',
+                cell = new List<int>
+                {
+                    1,1,0,1,1,0
+                }
+              },
+                    new alphabetBrailleStruct
+              {
+                symbol = 'h',
+                cell = new List<int>
+                {
+                    1,1,0,0,1,0
+                }
+              },
+                     new alphabetBrailleStruct
+              {
+                symbol = 'i',
+                cell = new List<int>
+                {
+                    0,1,0,1,0,0
+                }
+              },
+                      new alphabetBrailleStruct
+              {
+                symbol = 'j',
+                cell = new List<int>
+                {
+                    0,1,0,1,1,0
+                }
+              },
+                       new alphabetBrailleStruct
+              {
+                symbol = 'k',
+                cell = new List<int>
+                {
+                    1,0,1,0,0,0
+                }
+              },
+                        new alphabetBrailleStruct
+              {
+                symbol = 'l',
+                cell = new List<int>
+                {
+                    1,1,1,0,0,0
+                }
+              },
+                         new alphabetBrailleStruct
+              {
+                symbol = 'm',
+                cell = new List<int>
+                {
+                    1,0,1,1,0,0
+                }
+              },
+                          new alphabetBrailleStruct
+              {
+                symbol = 'n',
+                cell = new List<int>
+                {
+                    1,0,1,1,1,0
+                }
+              },
+                           new alphabetBrailleStruct
+              {
+                symbol = 'o',
+                cell = new List<int>
+                {
+                    1,0,1,0,1,0
+                }
+              },
+                            new alphabetBrailleStruct
+              {
+                symbol = 'p',
+                cell = new List<int>
+                {
+                    1,1,1,1,0,0
+                }
+              },
+                             new alphabetBrailleStruct
+              {
+                symbol = 'q',
+                cell = new List<int>
+                {
+                    1,1,1,1,1,0
+                }
+              },
+                              new alphabetBrailleStruct
+              {
+                symbol = 'r',
+                cell = new List<int>
+                {
+                    1,1,1,0,1,0
+                }
+              },
+                               new alphabetBrailleStruct
+              {
+                symbol = 's',
+                cell = new List<int>
+                {
+                    0,1,1,1,0,0
+                }
+              },
+                                new alphabetBrailleStruct
+              {
+                symbol = 't',
+                cell = new List<int>
+                {
+                    0,1,1,1,1,0
+                }
+              },
+                                 new alphabetBrailleStruct
+              {
+                symbol = 'u',
+                cell = new List<int>
+                {
+                    1,0,1,0,0,1
+                }
+              },
+                                  new alphabetBrailleStruct
+              {
+                symbol = 'v',
+                cell = new List<int>
+                {
+                    1,1,1,0,0,1
+                }
+              },
+                                   new alphabetBrailleStruct
+              {
+                symbol = 'x',
+                cell = new List<int>
+                {
+                    1,0,1,1,0,1
+                }
+              },
+                                    new alphabetBrailleStruct
+              {
+                symbol = 'y',
+                cell = new List<int>
+                {
+                    1,0,1,1,1,1
+                }
+              },
+                                     new alphabetBrailleStruct
+              {
+                symbol = 'z',
+                cell = new List<int>
+                {
+                    1,0,1,0,1,1
+                }
+              },
 
+        };
+
+    }
+    public enum Alphabet
+    {
+        RUSSIA,
+        ENGLISH
+    }
     public struct alphabetBrailleStruct
     {
         public List<int> cell;

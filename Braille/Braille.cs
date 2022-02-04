@@ -10,12 +10,12 @@ namespace Braille
 {
     class BrailleBuilder
     {
-        private static Bitmap picture;
-        private static Graphics pictureGr;
-        private static int scalePixel;
-        private static int padding;
-        private static int margin;
-        private static List<Zone> zones = new List<Zone>();
+        private Bitmap picture;
+        private Graphics pictureGr;
+        private int scalePixel;
+        private int padding;
+        private int margin;
+        private List<Zone> zones = new List<Zone>();
         private int currentZone = 0;
         /// <summary>
         /// Создать билдер
@@ -34,7 +34,15 @@ namespace Braille
 
             init();
         }
-        public BrailleBuilder(int width, int height, int scale, bool fillBaground, Brush brush)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="width">ширина картинки</param>
+        /// <param name="height">высота</param>
+        /// <param name="scale">размер одной точки</param>
+        /// <param name="fillBaground">Залить задний фон цветом</param>
+        /// <param name="color">Цвет для заливки</param>
+        public BrailleBuilder(int width, int height, int scale, bool fillBaground, Color color)
         {
 
             picture = new Bitmap(width, height);
@@ -44,7 +52,7 @@ namespace Braille
             margin = scalePixel;
             if (fillBaground)
             {
-                pictureGr.FillRectangle(brush, new Rectangle(new Point(0, 0), new Size(picture.Width, picture.Height)));
+                pictureGr.Clear(color);
             }
             init();
 
@@ -62,6 +70,10 @@ namespace Braille
             if (alphabet == Alphabet.RUSSIA)
             {
                 currentAlphabet = BrailleAlphabet.RUSSIA;
+            }
+            else if(alphabet == Alphabet.ENGLISH)
+            {
+                currentAlphabet = BrailleAlphabet.ENGLISH;
             }
             foreach (char c in text.Trim())
             {
@@ -91,8 +103,16 @@ namespace Braille
         {
             return picture;
         }
-        
-        private static void init()
+        /// <summary>
+        /// Очищает картинку
+        /// </summary>
+        /// <param name="color">Цвет заливки</param>
+        public void Clear(Color color)
+        {
+            pictureGr.Clear(color);
+            currentZone = 0;
+        }
+        private void init()
         {
             {
                 zones = new List<Zone>(0);
@@ -154,11 +174,11 @@ namespace Braille
                 zones.RemoveAt(0); 
             }
         }
-        private static void SetPixel(Graphics gr, Point pos)
+        private void SetPixel(Graphics gr, Point pos)
         {
             gr.FillEllipse(Brushes.Black, new Rectangle(pos, new Size(scalePixel, scalePixel)));
         }
-        private static void SetPixelNotFill(Graphics gr, Point pos)
+        private void SetPixelNotFill(Graphics gr, Point pos)
         {
             gr.DrawEllipse(new Pen(Brushes.Black), new Rectangle(pos, new Size(scalePixel, scalePixel)));
         }
@@ -172,9 +192,6 @@ namespace Braille
         
     }
 
-    public enum Alphabet
-    {
-        RUSSIA 
-    }
+  
 
 }
